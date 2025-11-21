@@ -1,0 +1,119 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    outline: none;
+}
+
+/* ----- BACKGROUND ----- */
+body {
+    background: linear-gradient(135deg, #014C23 0%, #02662e 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 15px;
+}
+
+/* ----- CARD CONTAINER ----- */
+.login-container {
+    width: 100%;
+    max-width: 420px;
+}
+
+/* ----- CARD ----- */
+.login-card {
+    background: #ffffff;
+    padding: 30px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0,0,0,0.25);
+    border-top: 6px solid #014C23;
+    animation: fadeIn 0.5s ease-in-out;
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to   { opacity: 1; transform: translateY(0); }
+}
+
+/* ----- TITLES ----- */
+.login-title {
+    color: #014C23;
+    font-size: 1.8rem;
+    font-weight: 800;
+    margin-bottom: 5px;
+}
+
+.login-subtitle {
+    color: #64748b;
+    font-size: 0.95rem;
+    margin-bottom: 25px;
+}
+
+/* ----- INPUTS ----- */
+.login-input {
+    margin-bottom: 22px;
+    text-align: left;
+}
+
+.login-input label {
+    display: block;
+    color: #014C23;
+    font-weight: 600;
+    margin-bottom: 6px;
+}
+
+.login-input input {
+    width: 100%;
+    padding: 14px;
+    background: #f8fafc;
+    border: 2px solid #e2e8f0;
+    border-radius: 12px;
+    font-size: 0.95rem;
+    transition: 0.3s ease;
+}
+
+.login-input input:focus {
+    background: #fff;
+    border-color: #FCA311;
+    box-shadow: 0 0 5px rgba(252,163,17,0.4);
+}
+
+/* ----- BUTTON ----- */
+.login-btn {
+    width: 100%;
+    padding: 14px;
+    background: linear-gradient(135deg, #FCA311, #ffbd42);
+    border: none;
+    border-radius: 12px;
+    font-size: 1rem;
+    color: white;
+    font-weight: 700;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: 0.3s ease;
+}
+
+.login-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 20px rgba(252,163,17,0.45);
+}
+
+/* ----- REGISTER LINK ----- */
+.login-register {
+    margin-top: 18px;
+    font-size: 0.9rem;
+    color: #64748b;
+}
+
+.login-register a {
+    color: #02662e;
+    font-weight: 700;
+    transition: 0.3s ease;
+}
+
+.login-register a:hover {
+    color: #FCA311;
+}
